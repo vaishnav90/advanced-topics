@@ -112,6 +112,8 @@ def print_optimal_path(trajectory, action_type):
     for i in range(len(trajectory) - 1):
         current = trajectory[i]
         next_pos = trajectory[i + 1]
+        print(action_type)
+        
         print(current, next_pos)
         for action_idx, (dr, dc) in enumerate(actions):
             test_row = max(0, min(6, current[0] + dr))
